@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\ModerationController as AdminModerationController
 use App\Http\Controllers\Driver\StationCatalogController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('driver.stations.index');
 });
 
 Route::get('/dashboard', function () {
